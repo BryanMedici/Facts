@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carnivore vs. Vegan Diet - Scientific Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #16a085;
+            margin-top: 20px;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        .section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            margin-top: 10px;
+            background-color: #3498db;
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Carnivore vs. Vegan Diet: Scientific Summary</h1>
+
+    <div class="section">
+        <h2>Carnivore Diet</h2>
+        <button onclick="toggle('carnivore')">Toggle Details</button>
+        <div class="content" id="carnivore">
+            <h3>What is it:</h3>
+            <p>A zero-carb, all-animal diet including red meat, fish, eggs, organs. Excludes all plant foods.</p>
+
+            <h3>Hormonal Effects:</h3>
+            <ul>
+                <li>Testosterone often increases (due to high fat/cholesterol)</li>
+                <li>Insulin drops (improves sensitivity)</li>
+                <li>Cortisol may rise from low-carb stress</li>
+                <li>T3 (thyroid) may drop with prolonged carb restriction</li>
+            </ul>
+
+            <h3>Bone & Skull:</h3>
+            <ul>
+                <li>Testosterone can widen jaw, brow, enhance cheekbones</li>
+                <li>Rich in bone nutrients like K2, phosphorus</li>
+                <li>Lacks vitamin C, magnesium – long-term bone/collagen health concerns</li>
+            </ul>
+
+            <h3>Key Studies:</h3>
+            <ol>
+                <li>Harvard Study (2021): 2,000+ carnivores; weight loss & inflammation improved, LDL risk raised</li>
+                <li>NIH Study (2021): Better insulin control vs. vegan; more calories consumed</li>
+            </ol>
+        </div>
+        
+    </div>
+
+    <div class="section">
+        <h2>Vegan Diet</h2>
+        <button onclick="toggle('vegan')">Toggle Details</button>
+        <div class="content" id="vegan">
+            <h3>What is it:</h3>
+            <p>A diet excluding all animal products. Focuses on plants, grains, legumes, nuts.</p>
+
+            <h3>Hormonal Effects:</h3>
+            <ul>
+                <li>Improves insulin sensitivity</li>
+                <li>Estrogen balance through fiber</li>
+                <li>Testosterone may drop if low-fat or low-calorie</li>
+                <li>Watch iodine/selenium for thyroid health</li>
+            </ul>
+
+            <h3>Bone & Skull:</h3>
+            <ul>
+                <li>Supports collagen with vitamin C, magnesium</li>
+                <li>May lack calcium, K2, D without supplements</li>
+                <li>Less testosterone-related facial change</li>
+            </ul>
+
+            <h3>Key Studies:</h3>
+            <ol>
+                <li>Stanford Twin Study (2023): Vegan twins had lower LDL, insulin, and weight</li>
+                <li>EPIC-Oxford (2016): High fiber, low B12/calcium</li>
+                <li>NIH Study (2021): Vegan group lost more fat despite high-carb intake</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Final Comparison</h2>
+        <button onclick="toggle('comparison')">Toggle Summary</button>
+        <div class="content" id="comparison">
+            <h3>Carnivore:</h3>
+            <ul>
+                <li>High in protein, B12, iron, K2</li>
+                <li>Boosts testosterone</li>
+                <li>Low in vitamin C, fiber</li>
+                <li>Gut microbiome diversity drops</li>
+            </ul>
+
+            <h3>Vegan:</h3>
+            <ul>
+                <li>High in antioxidants, fiber, phytonutrients</li>
+                <li>Improves heart markers</li>
+                <li>Needs B12, D, omega-3 supplementation</li>
+                <li>Risk of muscle loss if poorly managed</li>
+            </ul>
+
+            <h3>Conclusion:</h3>
+            <p>No absolute "best" diet – it depends on goals, genetics, and lifestyle. Smart, well-balanced planning is key.</p>
+        </div>
+        
+    </div>
+    <button id="nav">page 2</button>
+
+    <script>
+        function Changelocation() {
+            window.location.href = "page2.html";
+        }
+        document.getElementById("nav").addEventListener("click", Changelocation);
+        function toggle(id) {
+            const el = document.getElementById(id);
+            el.style.display = el.style.display === 'none' || el.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
